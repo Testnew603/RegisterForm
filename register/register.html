@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+    <form action="/register/register.html" id="reg" method="post" style="border: 1px solid green; max-width: 30%; padding: 10px;">
+    <legend style="font-weight: bold;">Regster</legend>    
+        <sup>FirstName</sup><span style="color: red;">*</span><br>
+    <div style="display: flex; justify-content: space-evenly">
+        <div>
+            <input type="text" required id="fname" class="name"><br>      
+            <sub>First</sub>
+        </div>
+        <div>
+        <input type="text" required id="lname" class="name"><br>
+        <sub>Last</sub>
+        </div>
+    </div><br>
+            
+        <sup>Username</sup><span style="color: red;">*</span><br>
+        <input type="text" required id="uname" class="name"><br><br>
+        
+        <sup>Email</sup><span style="color: red;">*</span><br>
+        <input type="email" required id="email" class="name"><br><br>
+
+        <sup>Phone</sup><span style="color: red;">*</span><br>
+        <input type="number" accept="Phone" maxlength="10" required id="phone" class="name"><br><br>
+
+        <sup>Password</sup><span style="color: red;" >*</span><br>
+        <input type="password" required id="pass" class="name"><br><br>
+
+        <sup>Short Bio</sup><span style="color: red;">*</span><br>
+        <textarea name="" id="desc" cols="40" rows="10" required class="name"></textarea><br>
+        <small>Share a little information about yourself.</small><br>
+
+        <input type="button" onclick="register()" value="Submit">
+
+
+    </form>
+    <script type="text/javascript" src="register.js"></script>
+</body>
+</html>
